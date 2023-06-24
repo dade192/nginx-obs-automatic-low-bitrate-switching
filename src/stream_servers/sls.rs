@@ -91,7 +91,7 @@ impl SwitchLogic for SrtLiveServer {
         }
 
         if stats.bitrate == 0 {
-            return SwitchType::offline;
+            return SwitchType::Offline;
         }
 
         if let Some(low) = triggers.low {
