@@ -149,7 +149,7 @@ impl SwitchLogic for Nginx {
         }
 
         if bitrate == 0 {
-            return SwitchType::Previous;
+            return SwitchType::Offline;
         }
 
         if let Some(low) = triggers.low {
